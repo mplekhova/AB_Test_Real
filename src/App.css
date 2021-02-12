@@ -1,38 +1,67 @@
 .App {
-  text-align: center;
-}
+  background: #F9F9F9;
+  color: #3C5AA8;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  font-family: 'Ubuntu', sans-serif;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+
+  height: 100vh;
+  box-shadow: 10px 10px 70px rgba(93, 109, 151, 0.5);
+}
+
+button {
+  width: 189px;
+  height: 38px;
+  background: #4A9DFF;
+  border-radius: 10px;
+  border-color: #4A9DFF;
+
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: #fff;
+
+  position: absolute;
+  right: 100px;
+
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+table {
+  width: 70vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+caption, thead {
+  opacity: 0.4;
+}
+
+caption {
+  margin: 15px;
+  font-size: 20px;
+}
+
+.mainTable > tbody {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #5D6E97;
+}
+
+td {
+  padding: 10px;
+}
+
+.mainTable > button {
+  bottom: 70px;
+}
+
+.upperTable > button {
+  top: 370px;
 }
